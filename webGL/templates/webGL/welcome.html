@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'webGL/CSS/welcome.css' %}" />
+    <script src="{% static 'webGL/JS/welcome.js' %}"></script>
+</head>
+
+<body>
+    <!-- </body> background="{% static 'webGL/Image/bg.jpg' %}"> -->
+    <div id="container">
+        <div id="capsule">
+            <h1 id="tt">Welcome to Wonderland</h1>
+            <button onclick="location.href = '/unity'">Start Game</button>
+        </div>
+    </div>
+</body>
+
+</html>
